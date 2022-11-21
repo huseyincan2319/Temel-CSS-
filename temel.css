@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Basit CSS Seçicileri</title>
+<style>
+    /* Sayfayı biçimlendirir. */
+body{
+    color:#545454;/* Metin rengini değiştirir. */
+    font-family: Arial,Helvetica; /* Yazı tpini değiştirir. */
+    background-color: #eee; /* Zemin rengini açık gri yapar. */
+}
+/* ilkparagraf id'sine sahip HTML ögesini biçimlendirir */
+#ilkParagraf{
+    color: red;
+}
+/* koyu isimli class'a HTML ogelerini biçimlendirir. */
+.koyu{
+    color:#000;
+}
+/* acik isimli class'a sahip HTML ogelerini biçimlendirir.*/
+.acik{
+    color:#c1c1c1;
+}
+/*kutu isimli id'sine sahip HTML ogesini biçimlendirir. */
+.kutu{
+    background-color:#fff; /* Zemin rengini beyaz yapar. */
+    padding: 20px; /* tüm kenarlara 20px'lik iç boşluk ekler. */
+    margin:20px; /* Tüm kenarlara 20px'lik dış boşluk ekler. */
+    line-height:150%; /* Metnin satır aralığını 50% artırır. */
+}
+/* Kutunun içindeki listenin her bir satırının ilk kelimesini biçimlendirir. */
+.kutu ul li span{
+    font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+  <h1>Basit CSS Seçicileri</h1>
+<p id="ilk Paragraf">Bu,<strong>#id</strong>kullanılarak biçimlendirilmiş bir paragraftır.</p>
+<p class="koyu">Bu, <strong>.koyu</strong> CSS seçicisi kulanılarak biçimlendirmiş bir paragraftır.</p>
+<p class="acik">Bu <strong>acik</strong> CSS seçicisi kulanılarak biçimlendirmiş bir paragraftır.</p>
+<p class="koyu">Bu, <strong>.koyu</strong> CSS seçicisi kulanılarak biçimlendirmiş bir paragraftır.</p>
+<p class="acik">Bu <strong>acik</strong> CSS seçicisi kulanılarak biçimlendirmiş bir paragraftır.</p>
+
+<div class="kutu">
+    <p>Aşağıdaki listede, her bir satırın ilk harfi CSS ile biçimlendirilmiştir.</p>
+    <ul>
+        <li><span>Birinci</span>Seçenek</li>
+        <li><span>İkinci</span>Seçenek</li>
+        <li><span>üçüncü</span>Seçenek</li>
+    </ul>
+</div>
+<div class="kutu">
+    <p>Aşağıdaki listede, her bir satırın ilk harfi CSS ile biçimlendirilmiştir.</p>
+    <ul>
+        <li><span>birinçi</span> seçenek</li>
+        <li><span>ikinci</span> seçenek</li>
+        <li><span>üçüncü</span>seçenek</li>
+    </ul>
+</div>
+</body>
+</html>
